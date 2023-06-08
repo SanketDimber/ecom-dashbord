@@ -27,7 +27,13 @@
 .App-link {
   color: #61dafb;
 }
-
+.regBox { 
+  padding: 50px;
+  width: 33%;
+  margin-left: 33%; 
+  margin-top: 7%;
+  border-style: double;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +41,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+.nav-bar-wrapper a{
+
+  padding-left: 30px;
+  text-decoration:none;
 }
