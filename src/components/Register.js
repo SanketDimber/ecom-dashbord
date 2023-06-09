@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button, FloatingLabel, Form } from "react-bootstrap";
 import {useNavigate} from 'react-router-dom';
-
+import Header from "./Header";
 const Register = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -33,6 +33,8 @@ const Register = () => {
     },[])
 
     return (
+        <>
+        <Header />
         <div className="regBox">
             <h3>Register</h3>
             <br></br>
@@ -74,6 +76,7 @@ const Register = () => {
             <br></br>
             <Button onClick={signUp}>Submit</Button>
         </div>
+        </>
     );
 };
 
